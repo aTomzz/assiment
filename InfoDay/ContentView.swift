@@ -29,6 +29,10 @@ struct ContentView: View {
                 Image(systemName: "info.circle.fill")
                 Text("Info")
             }
+            ItinView().tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("Itin")
+            }
         }
         .preferredColorScheme(darkMode ? .dark : .light)
     }

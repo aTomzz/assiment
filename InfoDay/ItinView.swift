@@ -6,19 +6,22 @@
 //
 //
 import SwiftUI
+import CoreData
 
 struct ItinView: View {
 
     @FetchRequest var events: FetchedResults<Event>
     @Environment(\.managedObjectContext) private var viewContext
-    init(saved: Bool) {
+    init() {
         
+    
         self._events = FetchRequest(
             entity: Event.entity(),
             sortDescriptors: [],
-            predicate: NSPredicate(format: "saved == %@", saved)
+            predicate: NSPredicate(format: "saved == true")
         )
     }
+    
     
 
 
@@ -40,6 +43,6 @@ struct ItinView: View {
 
 struct ItinView_Previews: PreviewProvider {
     static var previews: some View {
-        ItinView(saved: true)
+        ItinView()
     }
 }
