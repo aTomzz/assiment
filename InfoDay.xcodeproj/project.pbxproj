@@ -16,6 +16,13 @@
 		EA93328628DAB3C100E359E9 /* InfoDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93328528DAB3C100E359E9 /* InfoDayTests.swift */; };
 		EA93329028DAB3C100E359E9 /* InfoDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93328F28DAB3C100E359E9 /* InfoDayUITests.swift */; };
 		EA93329228DAB3C100E359E9 /* InfoDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93329128DAB3C100E359E9 /* InfoDayUITestsLaunchTests.swift */; };
+		EA93329F28DAB3E800E359E9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93329E28DAB3E800E359E9 /* InfoView.swift */; };
+		EA9332A128DAB3F600E359E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332A028DAB3F600E359E9 /* MapView.swift */; };
+		EA9332A328DAB40200E359E9 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332A228DAB40200E359E9 /* EventView.swift */; };
+		EA9332A528DAB40C00E359E9 /* DeptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332A428DAB40C00E359E9 /* DeptView.swift */; };
+		EA9332A728DAB41600E359E9 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332A628DAB41600E359E9 /* NewsView.swift */; };
+		EA9332AA28DAB52F00E359E9 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332A828DAB52F00E359E9 /* Event+CoreDataClass.swift */; };
+		EA9332AD28DAB70900E359E9 /* ItinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9332AC28DAB70900E359E9 /* ItinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		EA93328B28DAB3C100E359E9 /* InfoDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfoDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA93328F28DAB3C100E359E9 /* InfoDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDayUITests.swift; sourceTree = "<group>"; };
 		EA93329128DAB3C100E359E9 /* InfoDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA93329E28DAB3E800E359E9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		EA9332A028DAB3F600E359E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EA9332A228DAB40200E359E9 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		EA9332A428DAB40C00E359E9 /* DeptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptView.swift; sourceTree = "<group>"; };
+		EA9332A628DAB41600E359E9 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		EA9332A828DAB52F00E359E9 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EA9332AC28DAB70900E359E9 /* ItinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 		EA93326328DAB3C000E359E9 = {
 			isa = PBXGroup;
 			children = (
+				EA9332A828DAB52F00E359E9 /* Event+CoreDataClass.swift */,
 				EA93326E28DAB3C000E359E9 /* InfoDay */,
 				EA93328428DAB3C100E359E9 /* InfoDayTests */,
 				EA93328E28DAB3C100E359E9 /* InfoDayUITests */,
@@ -102,8 +117,14 @@
 				EA93327128DAB3C000E359E9 /* ContentView.swift */,
 				EA93327328DAB3C100E359E9 /* Assets.xcassets */,
 				EA93327828DAB3C100E359E9 /* Persistence.swift */,
-				EA93327A28DAB3C100E359E9 /* InfoDay.xcdatamodeld */,
 				EA93327528DAB3C100E359E9 /* Preview Content */,
+				EA93329E28DAB3E800E359E9 /* InfoView.swift */,
+				EA93327A28DAB3C100E359E9 /* InfoDay.xcdatamodeld */,
+				EA9332A028DAB3F600E359E9 /* MapView.swift */,
+				EA9332A228DAB40200E359E9 /* EventView.swift */,
+				EA9332A428DAB40C00E359E9 /* DeptView.swift */,
+				EA9332A628DAB41600E359E9 /* NewsView.swift */,
+				EA9332AC28DAB70900E359E9 /* ItinView.swift */,
 			);
 			path = InfoDay;
 			sourceTree = "<group>";
@@ -264,9 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA93327928DAB3C100E359E9 /* Persistence.swift in Sources */,
+				EA9332A528DAB40C00E359E9 /* DeptView.swift in Sources */,
+				EA9332AA28DAB52F00E359E9 /* Event+CoreDataClass.swift in Sources */,
+				EA9332A328DAB40200E359E9 /* EventView.swift in Sources */,
+				EA9332A728DAB41600E359E9 /* NewsView.swift in Sources */,
+				EA9332A128DAB3F600E359E9 /* MapView.swift in Sources */,
 				EA93327228DAB3C000E359E9 /* ContentView.swift in Sources */,
 				EA93327C28DAB3C100E359E9 /* InfoDay.xcdatamodeld in Sources */,
+				EA93329F28DAB3E800E359E9 /* InfoView.swift in Sources */,
 				EA93327028DAB3C000E359E9 /* InfoDayApp.swift in Sources */,
+				EA9332AD28DAB70900E359E9 /* ItinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

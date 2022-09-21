@@ -5,6 +5,7 @@
 //  Created by e9207182 on 21/9/2022.
 //
 
+import Foundation
 import CoreData
 
 struct PersistenceController {
@@ -14,8 +15,14 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+//            let newItem = Item(context: viewContext)
+//            newItem.timestamp = Date()
+            
+            let eventItem = Event(context: viewContext)
+                eventItem.id = UUID().uuidString
+                eventItem.title = UUID().uuidString
+                eventItem.dept_id = ["comp", "coms"].randomElement()
+                eventItem.saved = false
         }
         do {
             try viewContext.save()
@@ -41,16 +48,15 @@ struct PersistenceController {
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
 
                 /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
+                Typical reasons for an error here include:
+                * The parent directory does not exist, cannot be created, or disallows writing.
+                * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                * The device is out of space.
+                * The store could not be migrated to the current model version.
+                Check the error message to determine what the actual problem was.
+                */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
-        container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
