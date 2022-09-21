@@ -20,6 +20,7 @@ struct InfoDayApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .onAppear(perform: seedData)
             
+            
         }
     }
 }
